@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(3, 170, 170);
+    font: arial;
+    
+     
+}
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+div {
+    padding: 10px;
+}
+section{
+    background: blanchedalmond;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    
+}
+select {
+    width: 80%;
+    margin-top: 4px;
+}
+footer{
+    font-style: italic;
+    color: blanchedalmond;
+    text-align: center;
+}

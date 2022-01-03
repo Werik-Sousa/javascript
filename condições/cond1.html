@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condições multas</title>
+</head>
+<body>
+   <!-- <h1>Detran multas</h1>
+    velocidade <input type="number" name="txtvel" id="txtvel">Km/h 
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var txtv = document.getElementById('txtvel')
+            var vel = Number(txtv.value)    
+            var res = document.querySelector('div#res')
+            res.innerHTML =`<p>sua velocidade é ${vel} Km/h</p>`
+            if (vel > 50){
+                res.innerHTML +=' <p>você foi <strong>MULTADO</strong></p>'
+            }
+            res.innerHTML += '<p>dirija com cuidado</p>'
+        }
+    </script>
+    <!--sistema de nascionalidade ----->
+    <br>
+    <h1>nascionalidade</h1>
+    Pais de origem <input type="text" name="nasc" id="nasc">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resu">
+
+    </div>
+    <script>
+        function verificar(){
+            var nasc = document.getElementById('nasc')    
+            var resu = document.querySelector('div#resu')
+            resu.innerHTML =`<p>você esta no Brasil</p>`
+            if (nasc != "brasil"){
+                resu.innerHTML +=' <p>você é estrangeiro</p><br><p>posso verificar seu visto ?</p>'
+            }
+                resu.innerHTML += '<p>Seja bem vindo</p> '
+        }
+    </script>
+</body>
+</html>

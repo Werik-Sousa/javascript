@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+    <title>Introdução javascript</title>   
+<link rel="stylesheet" href="folha_de_estilo.css">
+  </head>
+<body>
+  <h1>Java Script</h1>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`ola ${nome}, seu nome tem ${nome.length} letras<br>`)
+        var n1 = Number(window.prompt('Qual o seu salario?'))
+        document.write(`seu salario é ${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`) // convertendo para dinheiro n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL 
+    </script>
+    
+</body>
+</html>

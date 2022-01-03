@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom, ex02</title>
+    <style>
+        div#res {
+            font: 20px arial;
+            background-color: aqua;
+            color: brown;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOMANDO VALORES</h1>
+    <input type="number" name="txt1" id="txt1">
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id= "res"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" outra opção de ativar função -->
+        resultado...
+
+    </div>
+    <script>
+        var res = window.document.getElementById('res')
+        res.addEventListener('click', clicar)
+        res.addEventListener('mouseenter', entrar)
+        res.addEventListener('mouseout', sair)
+        function clicar(){
+            res.innerText = 'resultado'
+            res.style.background= "black"
+            res.style.color = "white"
+        }
+        function entrar(){
+        res.innerText = 'entrou'
+        }
+        function sair (){
+            res.innerText = 'saiu!'
+        }
+            function somar(){
+                var txt1 = window.document.getElementById('txt1')
+                var txt2 = window.document.querySelector('input#txt2')//podemos usar o queryselector tambem e é mais moderno
+                var n1 = Number(txt1.value)// podemos omitir o comando parseint
+                var n2 = Number.parseInt(txt2.value)
+                var s = n1+n2
+                res.innerHTML = `resultado ${s}`
+                            }
+    </script>
+</body>
+</html>
